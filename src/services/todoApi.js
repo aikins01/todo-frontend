@@ -5,7 +5,7 @@ const getAll = () => {
 };
 
 const get = id => {
-  return axios.get(`/api/todos/${id}`);
+  return axios.get(`/api/todos/${id}/`);
 };
 
 const create = data => {
@@ -13,15 +13,15 @@ const create = data => {
 };
 
 const update = (id, data) => {
-  return axios.put(`/api/todos/${id}`, data);
+  return axios.put(`/api/todos/${id}/`, data);
 };
 
-const remove = id => {
-  return axios.delete(`/api/todos/${id}`);
+const down = id => {
+  return axios.delete(`/api/todos/${id}/`);
 };
 
-const removeAll = () => {
-  return axios.delete(`/api/todos`);
+const downAll = () => {
+  return axios.delete(`/api/todos/`);
 };
 
 export default {
@@ -29,6 +29,6 @@ export default {
   get,
   create,
   update,
-  remove,
-  removeAll,
+  down,
+  downAll,
 };
