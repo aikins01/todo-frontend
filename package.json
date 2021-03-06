@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
-  "proxy": "http://localhost:8000",
+  "proxy": "aikins01.pythonaywhere.com",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/forms": "^0.2.1",
