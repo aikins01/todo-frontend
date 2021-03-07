@@ -2,7 +2,7 @@
 import API from '../utils/API'
 
 const getAll = () => {
-  return API.get("/api/todos");
+  return API.get("/api/todos/");
 };
 
 const get = id => {
