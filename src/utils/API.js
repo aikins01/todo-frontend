@@ -1,5 +1,6 @@
 import axios from "axios";
 export default axios.create({
     baseURL: "https://aido-back.herokuapp.com/",
-    responseType: "json"
+    responseType: "json",
+    headers: {"Access-Control-Allow-Origin": "*"}
   });
