@@ -1,27 +1,32 @@
 import axios from "axios";
-import API from '../utils/API'
+
+axios.create({
+  baseURL: "https://aido-back.herokuapp.com/",
+  responseType: "json"
+});
+
 const getAll = () => {
-  return axios.API.get("/api/todos");
+  return axios.get("/api/todos");
 };
 
 const get = id => {
-  return axios.API.get(`/api/todos/${id}/`);
+  return axios.get(`/api/todos/${id}/`);
 };
 
 const create = data => {
-  return axios.API.post("/api/todos/", data);
+  return axios.post("/api/todos/", data);
 };
 
 const update = (id, data) => {
-  return axios.API.put(`/api/todos/${id}/`, data);
+  return axios.put(`/api/todos/${id}/`, data);
 };
 
 const down = id => {
-  return axios.API.delete(`/api/todos/${id}/`);
+  return axios.delete(`/api/todos/${id}/`);
 };
 
 const downAll = () => {
-  return axios.API.delete(`/api/todos/`);
+  return axios.delete(`/api/todos/`);
 };
 
 export default {
