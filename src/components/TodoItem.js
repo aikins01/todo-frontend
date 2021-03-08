@@ -13,7 +13,6 @@ function TodoItem(props) {
   const adding = () => {
     props.oldi(props.item)
     props.adding(true);
-    props.oldi()
   };
   if (props.status === false) {
     const color = "red";
