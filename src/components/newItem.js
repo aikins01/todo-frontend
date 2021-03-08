@@ -12,6 +12,7 @@ function NewItem({
   istatus="False",
   ipriority=1,
   cancel,
+  remove
 }) {
     const [title, setTitle] = React.useState(ititle);
     const [description, setDescription] = React.useState(idescription);
@@ -56,6 +57,7 @@ function NewItem({
     });
     setTimeout(add(),2000)
     cancel();
+    remove({})
   };
   return (
     <div>

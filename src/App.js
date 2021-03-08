@@ -65,7 +65,7 @@ function App() {
           {/* <a href="#my-modal" class="btn btn-primary">open modal</a>  */}
 <Element name="newItem">
           {adding && (
-            <NewItem id="newItem"iid={editItem.id} ititle={editItem.title} idescription={editItem.description} idate={editItem.date}  istatus={editItem.status} ipriority={editItem.priority} cancel={() => setAdding(false)} add={addNewItem} />
+            <NewItem id="newItem"iid={editItem.id} ititle={editItem.title} idescription={editItem.description} idate={editItem.date}  istatus={editItem.status} ipriority={editItem.priority} cancel={() => setAdding(false)} add={addNewItem} remove={setEditem} />
           )}
 </Element>
           {!loading && !(Object.entries(items).length === 0) && (
