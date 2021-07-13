@@ -1,4 +1,9 @@
 # This is the front for my todo app
+Automatic dark mode
+![Screenshot from 2021-07-13 22-28-35](https://user-images.githubusercontent.com/34272130/125533381-482677d6-105a-49cc-a4e9-f150fb37bcd7.png)
+ Responsive
+![aikinstodo on fleek co_(iPhone 6_7_8)](https://user-images.githubusercontent.com/34272130/125533525-a91c176d-2878-4629-8d30-0a5a47d3aaeb.png)
+
 
 built with React.
 
